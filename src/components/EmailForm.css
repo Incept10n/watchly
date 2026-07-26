@@ -1,0 +1,84 @@
+.email-form-container h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.email-form .form-group {
+  margin-bottom: 18px;
+}
+
+.email-form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.email-form input,
+.email-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.email-form textarea {
+  resize: vertical;
+}
+
+.email-form .hint {
+  display: block;
+  margin-top: 6px;
+  color: #666;
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
+.email-form .error-message {
+  color: #d9534f;
+  background: #f2dede;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.form-actions {
+  display: flex;
+  gap: 15px;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.cancel-btn {
+  background: #6c757d;
+  padding: 10px 25px;
+}
+
+.cancel-btn:hover {
+  background: #5a6268;
+}
+
+.submit-btn {
+  background: #007bff;
+  padding: 10px 25px;
+}
+
+.submit-btn:hover {
+  background: #0069d9;
+}
+
+.submit-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+@media (max-width: 480px) {
+  .form-actions {
+    flex-direction: column;
+  }
+
+  .form-actions button {
+    width: 100%;
+  }
+}

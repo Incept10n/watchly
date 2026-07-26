@@ -1,0 +1,111 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.modal-content {
+  background: #fff;
+  border-radius: 12px;
+  max-width: 600px;
+  width: 100%;
+  padding: 30px;
+  position: relative;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: #888;
+  cursor: pointer;
+  padding: 0;
+}
+
+.modal-close:hover {
+  color: #333;
+}
+
+.choice-step h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.choice-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.choice-btn {
+  padding: 18px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  border: 2px solid #ddd;
+  background: #f9f9f9;
+  transition: all 0.3s;
+  color: #333;
+}
+
+.choice-btn:hover {
+  border-color: #1a1a2e;
+  background: #1a1a2e;
+  color: #fff;
+}
+
+.email-btn {
+  border-color: #007bff;
+}
+
+.email-btn:hover {
+  background: #007bff;
+  border-color: #007bff;
+}
+
+.avito-btn {
+  border-color: #28a745;
+}
+
+.avito-btn:hover {
+  background: #28a745;
+  border-color: #28a745;
+}
+
+.thanks-step {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.thanks-step h2 {
+  color: #28a745;
+}
+
+.close-thanks-btn {
+  margin-top: 20px;
+  background: #1a1a2e;
+}
+
+@media (max-width: 480px) {
+  .modal-content {
+    padding: 20px;
+  }
+
+  .choice-btn {
+    font-size: 1rem;
+    padding: 14px;
+  }
+}
