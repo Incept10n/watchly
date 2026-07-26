@@ -10,7 +10,7 @@ function OrderModal({ isOpen, onClose }) {
 
   const handleAvito = () => {
     // Замените на реальную ссылку на вашу услугу на Авито
-    window.location.href = 'https://www.avito.ru/...';
+    window.location.href = 'https://www.avito.ru/sankt-peterburg/predlozheniya_uslug/kastomnye_chasy_na_zakaz_8189036442';
   };
 
   const handleEmailChoice = () => {

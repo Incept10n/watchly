@@ -13,20 +13,19 @@ function Footer() {
         <div className="footer-section">
           <h4>Контакты</h4>
           <p><span className="icon">📧</span> Incept1on.hf@yandex.ru</p>
-          <p><span className="icon">📞</span> +7 (999) 123-45-67</p>
-          <p><span className="icon">📍</span> Москва, ул. Тверская, д. 1</p>
+          <p><span className="icon">📞</span> +7 (931) 000-51-59</p>
         </div>
         <div className="footer-section">
           <h4>Соцсети</h4>
           <div className="social-links">
-            <a href="#" target="_blank" rel="noopener noreferrer">Instagram</a>
-            <a href="#" target="_blank" rel="noopener noreferrer">Telegram</a>
+            <a href="#" target="_blank" rel="noopener noreferrer">VK</a>
             <a href="#" target="_blank" rel="noopener noreferrer">YouTube</a>
+            <a href="#" target="_blank" rel="noopener noreferrer">Pinterest</a>
           </div>
         </div>
       </div>
       <div className="footer-bottom">
-        <p>&copy; 2026 Watchly. Все права защищены.</p>
+        <p>&copy; 2026 Watchly</p>
       </div>
     </footer>
   );

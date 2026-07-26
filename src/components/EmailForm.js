@@ -8,9 +8,6 @@ function EmailForm({ onSuccess, onCancel }) {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
 
-  // Замените на ваш реальный endpoint от Formspree
-  const FORMSPREE_ENDPOINT = 'https://formspree.io/f/ваш_ид_формы';
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError('');
@@ -30,19 +27,16 @@ function EmailForm({ onSuccess, onCancel }) {
     }
 
     try {
-      const response = await fetch(FORMSPREE_ENDPOINT, {
+      const response = await fetch('/api/send-email', {
         method: 'POST',
         body: formData,
-        headers: {
-          'Accept': 'application/json',
-        },
       });
 
       if (response.ok) {
         onSuccess();
       } else {
         const data = await response.json();
-        setError(data.error || 'Ошибка отправки. Попробуйте ещё раз.');
+        setError(data.detail || 'Ошибка отправки. Попробуйте ещё раз.');
       }
     } catch (err) {
       setError('Не удалось отправить сообщение. Проверьте интернет-соединение.');
