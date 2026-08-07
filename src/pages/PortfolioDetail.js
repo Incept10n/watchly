@@ -39,10 +39,6 @@ function PortfolioDetail() {
           <p>{item.result}</p>
         </div>
         <div className="info-block">
-          <h3>Описание заказа</h3>
-          <p>{item.description}</p>
-        </div>
-        <div className="info-block">
           <h3>Стоимость</h3>
           <p className="price-final">{item.price}</p>
         </div>

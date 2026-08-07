@@ -18,9 +18,9 @@ function Footer() {
         <div className="footer-section">
           <h4>Соцсети</h4>
           <div className="social-links">
-            <a href="#" target="_blank" rel="noopener noreferrer">VK</a>
-            <a href="#" target="_blank" rel="noopener noreferrer">YouTube</a>
-            <a href="#" target="_blank" rel="noopener noreferrer">Pinterest</a>
+            <a href="https://vk.ru/club240513824" target="_blank" rel="noopener noreferrer">VK</a>
+            <a href="https://www.youtube.com/@watchly-custom" target="_blank" rel="noopener noreferrer">YouTube</a>
+            <a href="https://ru.pinterest.com/WatchlyCustom/" target="_blank" rel="noopener noreferrer">Pinterest</a>
           </div>
         </div>
       </div>
